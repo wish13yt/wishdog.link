@@ -7,11 +7,59 @@
 
   gtag('config', 'G-5SZ4NTJXPM');
 </script>
+<script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_ZW5qb3llZC1wb255LTkyLmNsZXJrLmFjY291bnRzLmRldiQ"
+  src="https://enjoyed-pony-92.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+<script>
+  window.addEventListener('load', async function () {
+    await Clerk.load()
+
+    console.log('ClerkJS is loaded')
+  })
+</script>
 <img src="https://wish13.neocities.org/hi.gif">
 <div class="tenor-gif-embed" data-postid="3642346701878996431" data-share-method="host" data-aspect-ratio="1" data-width="20%"><a href="https://tenor.com/view/cat-cat-meme-explosion-explode-exploding-gif-3642346701878996431">Cat Cat Meme Sticker</a>from <a href="https://tenor.com/search/cat-stickers">Cat Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 <p>I'm Wish! This is my fancy smancy new domain.</p>
 <a href="https://ko-fi.com/wishcodes"><button>Ko-Fi</button></a> 
 <a href="/testzone.html"><button>Jump into the test zone!</button></a>
 <br>
-<a href="https://tag.rc24.xyz/user/1073962008413749298"><img src="https://tag.rc24.xyz/1073962008413749298/tag.png" alt="RiiTag" /></a>
+<div id="app"></div>
+
+<!-- Initialize Clerk with your
+Clerk Publishable key and Frontend API URL -->
+<script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_ZW5qb3llZC1wb255LTkyLmNsZXJrLmFjY291bnRzLmRldiQ"
+  src="https://enjoyed-pony-92.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+
+<script>
+  window.addEventListener('load', async function () {
+    await Clerk.load()
+
+    if (Clerk.user) {
+      document.getElementById('app').innerHTML = `
+        <div id="user-button"></div>
+      `
+
+      const userButtonDiv = document.getElementById('user-button')
+
+      Clerk.mountUserButton(userButtonDiv)
+    } else {
+      document.getElementById('app').innerHTML = `
+        <div id="sign-in"></div>
+      `
+
+      const signInDiv = document.getElementById('sign-in')
+
+      Clerk.mountSignIn(signInDiv)
+    }
+  })
+</script>
 <div style="display:none;">https://www.youtube.com/watch?v=PYp4vwmf3WU</div>
