@@ -7,45 +7,6 @@
 
   gtag('config', 'G-5SZ4NTJXPM');
 </script>
-<link rel="authorization_endpoint" href="https://indieauth.com/auth">
-<script
-  async
-  crossorigin="anonymous"
-  data-clerk-publishable-key="pk_live_Y2xlcmsud2lzaGRvZy5saW5rJA"
-  src="https://clerk.wishdog.link/npm/@clerk/clerk-js@4/dist/clerk.browser.js"
-  type="text/javascript">
-</script>
-<script>
-  window.addEventListener('load', async function () {
-    await Clerk.load()
-
-    console.log('ClerkJS is loaded')
-  })
-</script>
-
-<script>
-  window.addEventListener('load', async function () {
-    await Clerk.load()
-
-    if (Clerk.user) {
-      document.getElementById('app').innerHTML = `
-        <div id="user-button"></div>
-      `
-
-      const userButtonDiv = document.getElementById('user-button')
-
-      Clerk.mountUserButton(userButtonDiv)
-    } else {
-      document.getElementById('app').innerHTML = `
-        <div id="sign-in"></div>
-      `
-
-      const signInDiv = document.getElementById('sign-in')
-
-      Clerk.mountSignIn(signInDiv)
-    }
-  })
-</script>
 <h1 id="dynamicText">Hi! If you see this, a JS script failed. Please make an issue :)</h1>
 <script>
   
