@@ -1,6 +1,7 @@
 <h1>Get Fanta</h1>
 <div>
-    <button id="jsstyle" onclick="display_random_image();">Show Image</button> 
+    <button id="jsstyle" onclick="display_random_image();">Get yo Fanta</button> 
+    <h2>Your Fanta is....</h2>
 </div>
 <script>// Function declaration for display_random_image
 function display_random_image() 
@@ -50,4 +51,7 @@ function display_random_image()
     }
     // Displaying the new image  
     document.body.appendChild(newImage);
+    const element = document.getElementById("jsstyle");
+element.remove(); // Removes the div with the 'div-02' id
+
 }</script>
