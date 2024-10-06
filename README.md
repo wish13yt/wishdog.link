@@ -1,2 +1,2 @@
 # wishdog.link
-This is my website!
+[![forthebadge](https://forthebadge.com/images/featured/featured-contains-cat-gifs.svg)](https://forthebadge.com)
